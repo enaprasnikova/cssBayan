@@ -1,0 +1,111 @@
+.body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  color: blue;
+}
+
+.bayan-content {
+  max-width: 50vw;
+  margin: 5vh auto;
+}
+
+.bayan-content:hover .bayan-list__icon {
+  display: block;
+  visibility: visible;
+  transition: all 0.4s ease-out;
+}
+
+.bayan-content:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.bayan-content__header {
+  margin: 0;
+  padding-bottom: 2vh;
+  color: white;
+}
+
+.bayan-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bayan-list__container {
+  border-top: 2px solid;
+  border-color: darkgrey;
+  padding: 2vh 0 1vh;
+}
+
+.bayan-list__container:hover .bayan-list__img {
+  display: block;
+  transform: scale(1);
+  transition: all 0.4s ease-out;
+  visibility: visible;
+  opacity: 1;
+  width: 35vw;
+  height: 35vh;
+}
+
+.bayan-list__input {
+  margin: 0;
+  appearance: none;
+  width: 0;
+  height: 0;
+}
+
+.bayan-list__input:checked ~ .bayan-list__img {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  width: 35vw;
+  height: 35vh;
+  transform: none;
+  transition: none;
+}
+
+.bayan-list__input:checked ~ .bayan-list__label .bayan-list__icon {
+  background-image: url("images/icon_up.png");
+  transition: all 0.4s ease-out;
+}
+
+.bayan-list__input:checked ~ .bayan-list__label {
+  color: white;
+}
+
+.bayan-list__label {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bayan-list__img {
+  margin: 0 auto;
+  padding-top: 2vh;
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.bayan-list__icon {
+  background-image: url("images/icon_down.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  width: 23px;
+  height: 24px;
+  border: none;
+  visibility: hidden;
+}
+
+
+
